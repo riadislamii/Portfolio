@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/experience.css}">
+    <title>My Experience</title>
+</head>
+<body>
+<div th:insert="layout :: layout(${pageTitle}, ~{::section})">
+    <section>
+        <h5>What Skills I Have</h5>
+        <h2>My Experience</h2>
+
+        <!-- Experience Section -->
+        <div class="container experience_container">
+            <div class="experience_frontend">
+                <h3>Frontend Development</h3>
+                <div class="experience_content">
+                    <article class="experience_details">
+                        <div class="experience_details-icon"></div>
+                        <div>
+                            <h4>HTML</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div class="experience_details-icon"></div>
+                        <div>
+                            <h4>CSS</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div class="experience_details-icon"></div>
+                        <div>
+                            <h4>JavaScript</h4>
+                            <small>Basic</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div class="experience_details-icon"></div>
+                        <div>
+                            <h4>Bootstrap</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div class="experience_details-icon"></div>
+                        <div>
+                            <h4>VueJS</h4>
+                            <small>Basic</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="experience_backend">
+                <h3>Backend Development</h3>
+                <div class="experience_content">
+                    <article class="experience_details">
+                        <div class="experience_details-icon"></div>
+                        <div>
+                            <h4>MySQL</h4>
+                            <small>Basic</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div class="experience_details-icon"></div>
+                        <div>
+                            <h4>Spring Boot</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div class="experience_details-icon"></div>
+                        <div>
+                            <h4>Java</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div class="experience_details-icon"></div>
+                        <div>
+                            <h4>Kotlin</h4>
+                            <small>Basic</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="projects">
+            <h2 id="project-tittle" style="margin: 20px">Web designs</h2>
+            <div class="video-section">
+
+                <div class="video">
+
+                   <a href="https://www.figma.com/design/J7ZQpri2mRIQiZFklSP2WK/web_page_RiadIslami?node-id=94-619&t=zOQga9gX6iH7dph7-1" ><img src="images/juice_web.png" alt="Video Thumbnail" class="thumbnail" data-video-src=""> </a>
+                    <h6 style="margin: 20px">This is the design of home page of Fresh Juice</h6>
+                </div>
+                <div class="video">
+
+                    <img src="images/logitech_web.png" alt="Video Thumbnail" class="thumbnail" data-video-src="">
+                    <h6 style="margin: 20px">This is the design of home page of Logitech</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Modal -->
+        <!--<div id="videoModal" class="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <video controls id="videoPlayer">
+                <source id="videoSource" src="images/" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="backButton" class="back-button">Back</button>
+        </div>-->
+    </section>
+</div>
+</body>
+</html>
